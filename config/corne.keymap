@@ -28,15 +28,15 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |   `   |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |    *    |    -    |    =   |   INS    |
-// |       |  <  |  [  |  {  |  (  |  -  |   |  +  |  )  |    }    |    ]    |    >   |    \     |
-// | BTCLR | BT0 | BT1 | BT2 | BT3 | BT4 |   |     |     | BRI DEC | BRI INC | VOL UP | VOL DOWN |
-//                     | CMD |     | SPC |   | SPC |     |   OPT   |
+// |  `  |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |    *    |    -    |    =   |   INS    |
+// |     |  <  |  [  |  {  |  (  |  -  |   |  +  |  )  |    }    |    ]    |    >   |    \     |
+// |     | BT0 | BT1 | BT2 | BT3 | BT4 |   |     |     | BRI DEC | BRI INC | VOL UP | VOL DOWN |
+//                   | CMD |     | SPC |   | SPC |     |   OPT   |
                         display-name = "Lower";
                         bindings = <
    &kp GRAVE  &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT      &kp CARET &kp AMPS &kp KP_MULTIPLY &kp MINUS      &kp EQUAL      &kp INS
    &trans     &kp LT       &kp LBKT     &kp LBRC     &kp LPAR     &kp MINUS      &kp PLUS  &kp RPAR &kp RBRC        &kp RBKT       &kp GT         &kp BSLH
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans    &trans   &kp C_BRI_DEC   &kp C_BRI_INC  &kp C_VOL_DN &kp C_VOL_UP
+   &trans     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans    &trans   &kp C_BRI_DEC   &kp C_BRI_INC  &kp C_VOL_DN &kp C_VOL_UP
                           	            &kp LGUI     &trans       &kp SPACE      &kp SPACE &trans   &kp RALT
                         >;
                 };
